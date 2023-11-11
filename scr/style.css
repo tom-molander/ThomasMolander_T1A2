@@ -1,0 +1,461 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Code for all pages */
+
+/* Website primary background colour */
+body {
+    background-color: #1ab8ab;
+    margin: 0;
+
+}
+
+footer {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    bottom:150;
+    width: 100%;
+    text-align: center;
+} 
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+}
+
+/* Nav Styling */
+.nav-bar {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: black;
+    padding: 12px 20px;
+}
+
+.menu {
+    display:flex;
+}
+
+.menu li {
+    padding-left:30px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #1ab8ab;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #1ab8ab;
+    transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+    width: 100%
+}
+
+.open-menu , .close-menu {
+    position: absolute;
+    color: #5dd8fe;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+
+#check {
+    display: none;
+}
+
+
+@media(max-width: 610px) {
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: black;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .menu li {
+    margin-top:40px;
+    }
+    .menu li a {
+    padding:10px;
+    }
+    .open-menu, .close-menu {
+    display: block;
+    }
+    
+    #check:checked ~ .menu {right: 0;}
+
+}
+
+
+a, 
+a:visited {
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Logo {
+    display: block;
+    margin-top: 25px;
+    margin-left: 0;
+    width: 30%;
+    border-radius: 10%;
+    box-shadow: 5px;
+}
+
+.Logo:hover {
+    transform: scale(1.1) translate(50px, 50px)
+
+}
+
+
+
+.home-text {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+}
+
+.about-me-button {
+    background-color: white;
+    font-size: 1.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 15% black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+
+}
+
+.about-me-button:hover, .about-me-button:focus, .about-me-button:active {
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+-webkit-transform: scale(1;1);
+transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+
+.about-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 5%;
+    text-align: center;
+    background-color: rgb(236, 236, 227);
+}
+/* .about-text:hover {
+    transform: scale(1.1);
+} */
+.about-text p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.about-parent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.about-text1 {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 10%;
+    text-align: center;
+    background-color: rgb(236, 236, 227);
+
+}
+
+.about-resume {
+    display: flex;
+    justify-content: center;
+}
+
+.about-resume i {
+    font-size: 2.5rem;
+    margin-right: 5px;
+}
+
+.interests {
+    
+}
+
+
+
+
+
+/* main {
+    background-color: white;
+} */
+
+.TM-picture {
+    height: 400px;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
+
+/* h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 150px;
+} */
+
+
+.blog-container {
+    width: 100%;
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: .8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.blogs {
+    width: 400px;
+    height: 300px;
+    margin: 5px;
+    background: white;
+    border: 2px black;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.blog-img {
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+}
+
+
+/* .contact-item {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+} 
+
+
+/* .contact-text {
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 2.5%; */
+
+} 
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content {
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 2rem;
+    font-weight: 500px;
+}
+
+.contact .content p {
+    font-weight: 300;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .container-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container .container-info .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .container-info .box .icon {
+    min-width: 60px;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px; 
+
+}
+
+.container .container-info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 1rem;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+
+.container .container-info .box .text h3 {
+    font-weight: 500;
+}
+
+.contact-form {
+    /* width: 40%; */
+    padding: 40px;
+    background-color: white;
+    
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+
+}
+
+.contact-form .input-box span {
+    position: relative;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:focus ~ span,
+.contact-form .input-box textarea:valid ~ span {
+    color: #5dd8fe;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+
+.contact-form .input-box input[type="submit"] {
+    width: 100px;
+    background-color: #5dd8fe;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
