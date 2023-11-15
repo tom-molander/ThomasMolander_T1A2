@@ -1,3 +1,5 @@
+/* Formating for all pages */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,23 +8,23 @@
 
 /* Code for all pages */
 
-/* Website primary background colour */
+/* Website background colour */
 body {
     background-color: #1ab8ab;
     margin: 0;
 
 }
-
+/* Styling for footer */
 footer {
-    /* position: fixed; */
-    /* height: 100vh; */
+    position:relative;
     margin-top: 10px;
     left: 0;
-    bottom:150;
+    bottom:0;
     width: 100%;
     text-align: center;
 } 
 
+/* Styling for Social media links in footer */
 .social-media {
     display: flex;
     justify-content: space-around;
@@ -130,37 +132,45 @@ footer {
 
 }
 
-
+/*Links Styling */
 a, 
 a:visited {
     color: black;
 }
 
-/* main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
+/* Styling for Home page */
 
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+/* Home Page Styling */
 .home {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    min-height: 100%;
+    
 
 }
 
-
+/* Logo Styling */
 .Logo {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-top: 25px;
     margin-left: 0;
-    width: 30%;
+    width: 25%;
     border-radius: 10%;
     box-shadow: 5px;
 }
 
 .Logo:hover {
-    transform: scale(1,2);
+    transform: rotate(-360deg);
 
 }
 
@@ -178,7 +188,7 @@ a:visited {
 }
 
 
-
+/* Home page text styling */
 .home-text {
     font-family: 'Orbitron', sans-serif;
     font-size: 3rem;
@@ -187,8 +197,7 @@ a:visited {
     margin-left: 25px;
 }
 
-
-
+/* Home page button link styling */
 .btn {
     text-align: center;
     margin-top: 50px;
@@ -211,13 +220,19 @@ a:visited {
 
 .about-me-button:hover {
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-transform: scale(2);
 }
 
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for header 1 */
 h1 {
     text-align: center;
     font-family: 'Orbitron', sans-serif;
 }
+
+/* Styling for About Page */
 
 .about {
     display: flex;
@@ -226,13 +241,14 @@ h1 {
     flex-wrap: wrap;
 }
 
+/* Picture styling */
 .TM-picture {
     height: 400px;
     border-radius: 10%;
     margin-left: 10px;
 } 
 
-
+/* Self introduction styling */
 .about-text {
     font-family: 'Orbitron', sans-serif;
     margin-top: 10px;
@@ -293,11 +309,19 @@ h2 {
     font-family: 'Orbitron', sans-serif;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 10%;
+    text-align: center;
+    background-color: rgb(236, 236, 227);
 }
 
 .about-resume i {
     font-size: 2.5rem;
     margin-right: 5px;
+    
 }
 
 .interests {
@@ -324,18 +348,7 @@ h2 {
 }
 
 
-
-
-/* main {
-    background-color: white;
-} */
-
-/* h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-top: 150px;
-} */
-
+/* Styling & format for Blog Page */
 
 .blog-container {
     width: 100%;
@@ -381,6 +394,8 @@ h2 {
 .blog p {
     margin: 2.5px;
 }
+
+/* Styling for Contact Page & message box*/
 
 .contact {
     font-family: 'Orbitron', sans-serif;
