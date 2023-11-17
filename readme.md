@@ -1,7 +1,7 @@
 # Tom Molander - Portfolio Website
 
 - Deployed Site: Link to deployed site
-- Remote Repository: https://github.com/tom-molander/ThomasMolander_T1A2 
+- Remote Repository: https://github.com/tom-molander/ThomasMolander_T1A2
 - Presentation video:
 
 ### **Description**
@@ -34,7 +34,7 @@ All pages feature responsive layout design using flexbox and some media queries,
   - Personal logo
   - Introduction statement with animated typing effect.
   - Button with link to about me page for users to follow along in a preferred method.
-- About 
+- About
   - Responsive image and texts with emplyment history, interests & resume.
 - Blog
   - Six sample blogs on personal interests listed in previous page including title, date of publication and sample text.
@@ -43,9 +43,9 @@ All pages feature responsive layout design using flexbox and some media queries,
 
 ### **Sitemap**
 
-Sitemap
+![Sitemap](Docs/Sitemap/Sitemap.png)
 
-
+### **Screenshots**
 
 Screenshot of home page
 Screenshot of about page
