@@ -14,7 +14,7 @@ Create a portfolio website which presents you as a dev and IT professional. The 
 
 ### **Purpose**
 
-The purpose of this website, is to showcase my current programming skills and projects to potential employers. It is also intended to provide a way to get in contact and some of my personal interests and hobbies.
+The purpose of this website, is to showcase my current programming skills to potential employers. It is also intended to provide a way to get in contact and some of my personal interests and hobbies.
 
 ### **Functionality / Features**
 
@@ -24,7 +24,7 @@ All pages feature responsive layout design using flexbox and some media queries,
 
 **Site-Wide Features**
 
-- Responsive hamburger nav bar, which turns into a side bar when using on mobile or tablet.
+- Responsive hamburger nav bar, which turns into a side bar when using on mobile or tablet once interacted with.
 
 - Footer with links to social media accounts.
 
@@ -35,7 +35,7 @@ All pages feature responsive layout design using flexbox and some media queries,
   - Introduction statement with animated typing effect.
   - Button with link to about me page for users to follow along in a preferred method.
 - About
-  - Responsive image and texts with emplyment history, interests & resume.
+  - Responsive image and texts with employment history, interests & resume.
 - Blog
   - Six sample blogs on personal interests listed in previous page including title, date of publication and sample text.
 - Contact
@@ -43,14 +43,23 @@ All pages feature responsive layout design using flexbox and some media queries,
 
 ### **Sitemap**
 
+Simple sitemap of the website:
+
 ![Sitemap](Docs/Sitemap/Sitemap.png)
 
 ### **Screenshots**
 
-Screenshot of home page
-Screenshot of about page
-Screenshot of blog page
-Screenshot of contact page
+Home page:
+![Home Page](Docs/Screenshots/Home-Page_Desktop.png)
+
+About Page:
+![About Page](Docs/Screenshots/About-Page_Desktop.png)
+
+Blog Page:
+![Blog Page](Docs/Screenshots/Blog-Page_Desktop.png)
+
+Contact Page:
+![Contact Page](Docs/Screenshots/Contact-Page_Desktop.png)
 
 ### **Target Audience**
 
@@ -63,4 +72,4 @@ Tech Stacks used in the this portfolio:
 - HTML5
 - CSS
 - Git & GitHub
-- GitHub io deployment platform
+- Netlify
