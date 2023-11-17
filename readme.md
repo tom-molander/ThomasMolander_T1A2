@@ -1,8 +1,8 @@
 # Tom Molander - Portfolio Website
 
-Deployed Site: Link to deployed site
-Remote Repository: 
-Presentation video:
+- Deployed Site: Link to deployed site
+- Remote Repository: https://github.com/tom-molander/ThomasMolander_T1A2 
+- Presentation video:
 
 ### **Description**
 
@@ -45,6 +45,8 @@ All pages feature responsive layout design using flexbox and some media queries,
 
 Sitemap
 
+
+
 Screenshot of home page
 Screenshot of about page
 Screenshot of blog page
@@ -59,6 +61,6 @@ This portfolio is tailored for employers seeking a skilled and dedicated web dev
 Tech Stacks used in the this portfolio:
 
 - HTML5
-- CSS3
+- CSS
 - Git & GitHub
 - GitHub io deployment platform

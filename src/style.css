@@ -1,538 +1,579 @@
 /* Formating for all pages */
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Code for all pages */
 
 /* Website background colour */
 body {
-    background-color: #1ab8ab;
-    margin: 0;
-
+  background-color: #1ab8ab;
+  margin: 0;
+  height: 100vh;
 }
 /* Styling for footer */
 footer {
-    position:relative;
-    margin-top: 10px;
-    left: 0;
-    bottom:0;
-    width: 100%;
-    text-align: center;
-} 
+  position: relative;
+  margin-top: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
 
 /* Styling for Social media links in footer */
 .social-media {
-    display: flex;
-    justify-content: space-around;
-    font-size: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5rem;
 }
 
 /* Nav Styling */
 .nav-bar {
-    width: 100%;
-    height: 5vh;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    position: relative;
-    background-color: black;
-    padding: 12px 20px;
-    font-family: 'Orbitron', sans-serif;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: black;
+  padding: 12px 20px;
+  font-family: "Orbitron", sans-serif;
 }
 
 .menu {
-    display:flex;
+  display: flex;
 }
 
 .menu li {
-    padding-left:30px;
+  padding-left: 30px;
 }
 
 .menu li a {
-    display: inline-block;
-    text-decoration: none;
-    color: #1ab8ab;
-    text-align: center;
-    transition: 0.15s ease-in-out;
-    position: relative;
-    text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  color: #1ab8ab;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
 }
 
 .menu li a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: #1ab8ab;
-    transition: 0.15s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #1ab8ab;
+  transition: 0.15s ease-in-out;
 }
 
 .menu li a:hover:after {
-    width: 100%
+  width: 100%;
 }
 
-.open-menu , .close-menu {
-    position: absolute;
-    color: #1ab8ab;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: none;
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: #1ab8ab;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
 }
 
 .open-menu {
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 
 .close-menu {
-    top: 20px;
-    right: 20px;
+  top: 20px;
+  right: 20px;
 }
-
 
 #check {
-    display: none;
+  display: none;
 }
 
+@media (max-width: 1024px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: black;
+    transition: all 0.2s ease-in-out;
+  }
 
-@media(max-width: 1024px) {
-    .menu{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 70%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        background-color: black;
-        transition: all 0.2s ease-in-out;
-    }
-    
-    .menu li {
-    margin-top:40px;
-    }
-    .menu li a {
-    padding:10px;
-    }
-    .open-menu, .close-menu {
+  .menu li {
+    margin-top: 40px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
     display: block;
-    }
-    
-    #check:checked ~ .menu {right: 0;}
+  }
 
+  #check:checked ~ .menu {
+    right: 0;
+  }
 }
 
 /*Links Styling */
-a, 
+a,
 a:visited {
-    color: black;
+  color: black;
 }
 
 /* Styling for Home page */
 
 main {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 92vh;
+  margin: 0;
+  justify-content: space-between;
 }
 
 /* Home Page Styling */
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 100%;
-    
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 60%;
 }
 
 /* Logo Styling */
 .Logo {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    margin-left: 0;
-    width: 25%;
-    border-radius: 10%;
-    box-shadow: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: 0;
+  width: 25%;
+  min-width: 300px;
+  border-radius: 10%;
+  box-shadow: 5px;
 }
-
-.Logo:hover {
-    transform: rotate(-360deg);
-
-}
-
-@keyframes logo {
-    0% {
-        width: 30%
-    }
-    50% {
-        width: 50%
-    }
-
-    100% {
-        width: 30%
-    }
-}
-
 
 /* Home page text styling */
 .home-text {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 30px;
-    margin-left: 25px;
+  font-family: "Orbitron", sans-serif;
+  /* The min() function is being used here to set the font size to the minimum value between 6vw and 36px. 
+  This means that the font size will be responsive to the viewport width but will not go below 36 pixels. */
+  font-size: min(6vw, 36px);
+  text-align: center;
+  /* margin-top: 30px; */
+}
+
+/* Animation for Home Page */
+.animated-title {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+@media (min-width: 734px) {
+  .animated-title {
+    animation: typing 2s steps(20), cursor 0.5s step-end infinite alternate;
+    overflow: hidden;
+    border-right: 5px solid black;
+    display: inline-block;
+    width: 11em;
+    opacity: 1;
+    white-space: nowrap;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
 }
 
 /* Home page button link styling */
 .btn {
-    text-align: center;
-    margin-top: 50px;
-    color: black;
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+  flex-grow: 1;
 }
 
 .about-me-button {
-    background-color: white;
-    font-size: 1.8rem;
-    font-family: 'Orbitron', sans-serif;
-    border: 15% black;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition-duration: 0.3s;
+  height: 40px;
+  padding: 4px;
+  border: none;
+  background: rgb(255, 255, 255);
+}
+.about-me-button:hover {
+  color: #ffffff;
+  background: transparent;
+  box-shadow: none;
+}
+.about-me-button:before,
+.about-me-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
+}
+.about-me-button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.about-me-button:hover:before,
+.about-me-button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
 
+.about-me-button {
+  background-color: white;
+  font-size: 1.8rem;
+  font-family: "Orbitron", sans-serif;
+  border: 15% black;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.3s;
 }
 
 .about-me-button:hover {
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.btn:hover {
-    transform: scale(1.1);
+.about-me-button:hover {
+  transform: scale(1.1);
 }
 
 /* Styling for header 1 */
 h1 {
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
 }
 
 /* Styling for About Page */
 
+.about-container {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+}
+
 .about {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* Picture styling */
 .TM-picture {
-    height: 400px;
-    border: 10px black;
-    margin-left: 10px;
-} 
+  height: 400px;
+  border: 10px black;
+  margin-left: 10px;
+}
 
 /* Self introduction styling */
 .about-text {
-    font-family: 'Orbitron', sans-serif;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    border: 2px solid black;
-    /* border-radius: 5%; */
-    text-align: center;
-    background-color: rgb(236, 236, 227);
-    max-width: 410px;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: rgb(236, 236, 227);
+  display: inline-block;
+  max-width: 800px;
 }
-/* .about-text:hover {
-    transform: scale(1.1);
-} */
+
 .about-text p {
-    font-family: 'Orbitron', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h2 {
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    margin-top: 15px;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  margin-top: 15px;
 }
 
 .about-parent {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-
-.about-text1 {
-    font-family: 'Orbitron', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    border: 2px solid black;
-    text-align: center;
-    background-color: rgb(236, 236, 227);
-
+.about-employment {
+  font-family: "Orbitron", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: rgb(236, 236, 227);
+  max-width: 500px;
 }
 
-.about-text1 i {
-    font-size: 2rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.about-employment i {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .about-resume {
-    font-family: 'Orbitron', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    text-align: center;
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
 
 .about-resume i {
-    font-size: 2.5rem;
-    margin-top: 5px; */
-    
+  font-size: 2.5rem;
+  margin-top: 5px;
 }
 
 .interests {
-    font-family: 'Orbitron', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .interests i {
-    margin-right: 15px;
-    font-size: 2rem;
+  margin-right: 15px;
+  font-size: 2rem;
 }
 
 .interests li {
-    list-style-type: none;
-    margin-top: 8px;
-    margin-bottom: 4px;
-    margin-left: 5px;
-    margin-right: 5px;
-    display: inline-block;
+  list-style-type: none;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  width: 500px;
 }
 
 .interests-list {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    border: 2px solid black;
-    text-align: center;
-    background-color: rgb(236, 236, 227);
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: rgb(236, 236, 227);
 }
-
 
 /* Styling & format for Blog Page */
 
 .blog-container {
-    width: 100%;
-    padding: 10px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    font-size: .8rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
-
 .blogs {
-    font-family: 'Orbitron', sans-serif;
-    width: 400px;
-    height: 300px;
-    margin: 10px;
-    background: white;
-    border: 5px black;
-    overflow: hidden;
-
+  font-family: "Orbitron", sans-serif;
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  background: white;
+  border: 5px black;
+  overflow: hidden;
 }
 
 .blogs:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .blog-img {
-    border-radius: 10px;
-    display: block;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-
+  border-radius: 10px;
+  display: block;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 .blog p {
-    margin: 2.5px;
+  margin: 2.5px;
 }
 
 /* Styling for Contact Page & message box*/
 
 .contact {
-    font-family: 'Orbitron', sans-serif;
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  font-family: "Orbitron", sans-serif;
+  position: relative;
+  height: 86vh;
+  padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contact .content {
-    text-align: center;
+  text-align: center;
 }
 
 .contact .content h2 {
-    font-size: 2rem;
-    font-weight: 500px;
+  font-size: 2rem;
+  font-weight: 500px;
 }
 
 .contact .content p {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .container {
-    width: 100%;
-    display: flex;
-    margin-top: 30px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .container .container-info {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-
+  width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .container .container-info .box {
-    position: relative;
-    padding: 20px 0;
-    display: flex;
+  position: relative;
+  padding: 20px 0;
+  display: flex;
 }
 
 .container .container-info .box .icon {
-    min-width: 60px;
-    height: 60px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 1rem; 
-
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1rem;
 }
 
-.container .container-info .box .text{
-    display: flex;
-    margin-left: 20px;
-    font-size: 1rem;
-    flex-direction: column;
-    font-weight: 300;
-
+.container .container-info .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 1rem;
+  flex-direction: column;
+  font-weight: 300;
 }
 
 .container .container-info .box .text h3 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .contact-form {
-    padding: 40px;
-    background-color: white; 
-    border: 5px black;
+  padding: 40px;
+  background-color: white;
+  border: 5px black;
 }
 
 .contact-form h2 {
-    font-size: 2rem;
-    font-weight: 500;
-
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .contact-form .input-box {
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .contact-form .input-box input,
 .contact-form .input-box textarea {
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid black;
-    outline: none;
-    resize: none;
-
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  resize: none;
 }
 
 .contact-form .input-box span {
-    position: relative;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    
+  position: relative;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
 .contact-form .input-box input:focus ~ span,
 .contact-form .input-box input:valid ~ span,
 .contact-form .input-box textarea:focus ~ span,
 .contact-form .input-box textarea:valid ~ span {
-    color: #1ab8ab;
-    font-size: 12px;
-    transform: translate(-20px);
+  color: #1ab8ab;
+  font-size: 12px;
+  transform: translate(-20px);
 }
 
 .contact-form .input-box input[type="submit"] {
-    width: 100px;
-    background-color: #1ab8ab;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-    font-family: 'Orbitron', sans-serif;
+  width: 100px;
+  background-color: #1ab8ab;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Orbitron", sans-serif;
 }
-
