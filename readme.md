@@ -1,8 +1,8 @@
 # Tom Molander - Portfolio Website
 
-- Deployed Site: Link to deployed site
+- Deployed Site: https://super-profiterole-c56616.netlify.app/
 - Remote Repository: https://github.com/tom-molander/ThomasMolander_T1A2
-- Presentation video:
+- Presentation video: https://www.veed.io/view/2f9b4ad7-2b37-4306-8bc7-d0d3a6a36379?panel=share
 
 ### **Description**
 
